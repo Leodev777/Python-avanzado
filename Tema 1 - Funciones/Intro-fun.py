@@ -98,3 +98,8 @@
 # describir_mascota("Rex") ---> si no se especifica el tipo de animal, se asume que es un perro
 # describir_mascota("Michi", "gato") ---> si se especifica el tipo de animal, se usa el valor proporcionado
 
+# -------------- REPASO DE LO QUE VIMOS---------------
+
+# 1 Paradigmas de programacion
+# 2 Que es una funcion y como crearla
+# 3 Trabaja con parametos y argumentos
