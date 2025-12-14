@@ -1,19 +1,22 @@
-# Solicitar una contraseña
+# Solicita una contraseña, la valida y, si no es segura, sugiere una nueva
 
-# Validar la contraseña
-
-## Contraseñas no avalida --> sugerir nueva contraseña
+import validador
+import generador
 
 def solicitar_contrasena_segura():
+    # Pedimos la contraseña al usuario
     contrasena = input("Por favor, ingrese una contraseña: ")
-    valida = validar_contrasena(contrasena)
 
-    if valida:
+    # Validamos la contraseña usando el modulo validador
+    es_valida = validador.validar_contrasena(contrasena)
+
+    if es_valida:
         print("Contraseña OK")
     else:
-        print("Contraseña no segura, ingrese nueva contraseña :")
-        sugerencia = generar_contrasena_segura()
+        print("Contraseña no segura")
+        # Generamos una contraseña segura como sugerencia
+        sugerencia = generador.generar_contrasena_segura(longitud=12)
         print(f"Sugerencia de contraseña segura: {sugerencia}")
-    
-    # Ejemplo
-    solicitar_contrasena_segura()
+
+# Punto de entrada real del programa
+solicitar_contrasena_segura()

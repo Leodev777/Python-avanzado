@@ -1,23 +1,27 @@
-import random # Esta libreria nos permite generar selecciones aleatorias
-import string # Estra libreria nos permite acceder a conjuntos de caracteres predefinidos con .ascii_uppercase, .ascii_lowercase, .digits, .punctuation
-# Importante: recordar instalar librerias si es necesario
+# Genera contraseñas seguras de forma aleatoria
 
-# Funcion para generar una contraseña segura
-def generar_contrasena_segura(longitud, incluir_mayusculas = True, incluir_minusculas = True, incluir_numeros = True, incluir_caracteres_especiales = True):
-    """Genera una contraseña segura basada en los criterios especificados"""
+import random
+import string
 
-    
-    caracteres = "" # Generamos un string vacio para ir agragando los tipos de caracteres
+def generar_contrasena_segura(
+    longitud=12,
+    incluir_mayusculas=True,
+    incluir_minusculas=True,
+    incluir_numeros=True,
+    incluir_caracteres_especiales=True
+):
+    caracteres = ""
 
-    if incluir_mayusculas: # Agregamos mayus
+    if incluir_mayusculas:
         caracteres += string.ascii_uppercase
-    if incluir_minusculas: # Agregamos minus
+    if incluir_minusculas:
         caracteres += string.ascii_lowercase
-    if incluir_numeros: # Agregamos numeros
+    if incluir_numeros:
         caracteres += string.digits
-    if incluir_caracteres_especiales: # Agregamos caracteres especiales
+    if incluir_caracteres_especiales:
         caracteres += string.punctuation
 
-    contrasena = ''.join(random.choice(caracteres) for _ in range(longitud)) # Generamos la contraseña seleccionando aletatoriamente
+    # Construimos la contraseña eligiendo caracteres al azar
+    contrasena = "".join(random.choice(caracteres) for _ in range(longitud))
 
-    return contrasena # Devolvemos pass generada
+    return contrasena
