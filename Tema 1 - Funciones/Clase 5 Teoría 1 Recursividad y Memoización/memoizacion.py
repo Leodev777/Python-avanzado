@@ -17,7 +17,7 @@ def fibonacci_ca(indice):
     fibonacci_cache[indice] = valor # almacena el valor calculado en el diccionario
     return valor
 
-# Implementacion IMPLICITA
+# Implementacion IMPLICITAA
 
 from functools import lru_cache # importamos el decorador lru_cache
 @lru_cache(maxsize = 20) # maxsize es el numero maximo de resultados a almacenar en cache
