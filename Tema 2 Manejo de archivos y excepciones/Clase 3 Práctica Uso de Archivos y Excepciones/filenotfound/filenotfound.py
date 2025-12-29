@@ -10,4 +10,5 @@ for filenames in filename:
     except FileNotFoundError:
             print(f"No se encuentra el archivo")
             pass
-    
+    except: # si tirar otro error el programa va a pasar
+         pass
