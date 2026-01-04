@@ -1,0 +1,11 @@
+programacion
+
+Python es un lenguaje de programacion orientad a objetos
+
+Objetos y clases!
+
+Clases: Es una representacion de algo del mundo real ej: Silla cosa con 4 patas, mas sus detalles colores
+etc, pero en si silla es una Clases
+
+otro ej un coche: el concepto de clase es el coche, y luego sus caracteristicas colores etc son los Objetos
+que perteneces a la clase coche
