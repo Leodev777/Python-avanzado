@@ -114,7 +114,7 @@ Metodo: __INIT__
 
 class mi_clase:
     def __init__(self):
-        self.attrib = []
+        self.attrib = []  
 
         
 "self" es la referencia a la instancia actual de un objeto y se usa para acceder a sus atributos y métodos. (Osea se llama asi mismo)
