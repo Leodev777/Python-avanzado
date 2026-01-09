@@ -172,6 +172,8 @@ for i, coche in enumerate(todos_los_coches, 1):
 # Para que funcione la Subclase debe estar definida despues de la Superclase
 
 
-
+""" Una vez el coche electrtico heredo los atributos y metdos de la superclase coche, podemos
+añadir metodos que solo apliquen a los cocches electicos
+"""
 
 
