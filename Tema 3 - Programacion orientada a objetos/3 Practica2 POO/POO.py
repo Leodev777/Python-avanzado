@@ -176,4 +176,32 @@ for i, coche in enumerate(todos_los_coches, 1):
 añadir metodos que solo apliquen a los cocches electicos
 """
 
+"""
+POLIMORFISMO: Diferentes clases pueden tener metodos con el mismo nombre pero
+comportamientos distintos.
+"""
 
+"""
+Cuando estemos modelizando un elementyo del mundo real puede que nos encontremos con añadidos
+cada vez mas detalles dentro de una clase. Quizas nos encontremos con una lista creciente de atributos y metodos
+que hacen que nuestros archivos sean muy extensos.
+EJ: Si continuamos añadiendo detalles a la clase CocheElectrico puede que notemos que estamos añadiendo
+muchos atributos y metodos realcionados con la bateria del coche.
+En estos momentos toca para y movver estos atributos y metodos a una nueva clase llamada Bateria.
+"""
+
+"""
+Este ya es un nivel de logica superior donde ya solo pensamos en sintaxis sino realmente
+pensando en ocmo modelizar el mundo real de nuestro alrededor.
+"""
+
+"""
+Algunos enfoques son mas eficientes que otros, pero se necesita practica para encontrar las representaciones
+mas eficientes. si tu codigo esta funcionado como deseas! ya lo estas haciendo bien
+
+"""
+
+"""
+By Sofware-Craft _Serena
+Linkedin: Leo Iglesias
+"""
